@@ -7,7 +7,7 @@ console.log(blogData);
 function ArticleList({posts}){
 const blogPosts = blogData.posts.map(post => {
     return(
-    <Article key={post.id} title={post.title} date={post.date} preview={post.preview}/>     
+    <Article key={post.id} title={post.title} date={post.date} minutes={post.minutes} preview={post.preview}/>     
     )})
 
     return(
